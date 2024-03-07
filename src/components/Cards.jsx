@@ -15,8 +15,9 @@ export default function Cards(props) {
         min={c.main.temp_min}
         name={c.name}
         img={c.weather[0].icon}
-        onClose={() => alert(c.name)}
-        key={c.id}
-      />)}
+        onClose={() => alert(c.name)} // ventana modal
+        key={c.id} // es un registro interno del componente en React, no se puede acceder 
+      />)
+    }
   </div>)
 };

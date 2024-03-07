@@ -5,7 +5,7 @@ export default function SearchBar(props) {
   return (
     <div>
       <input type="text" placeholder='City ...'/>
-      <button onClick={()=>props.onSearch('Search ... ')}>Add</button>
+      <button onClick={()=>props.onSearch('Search city... ')}>Add</button>
     </div>
   )
 };
