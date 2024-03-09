@@ -9,51 +9,38 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+  
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-     <!-- Bootstrap -->
+   
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Weather App</title>
-
+    <link rel="stylesheet" target="_blank" rel="noopener" href="style.css">
     <!-- fontawesome kit -->
     <script
      src="https://kit.fontawesome.com/4d63ed8f35.js"
      crossorigin="anonymous"
     ></script>
 
+    <title>Weather App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="jumbotron jumbotron-fluid containerDiv">
-      <img src="./clima.png" alt="Clima">
-      <div class="container">
+    <!-- <div class="jumbotron jumbotron-fluid containerDiv"> -->
+    <header class="conteiner">
+      <div></div>
+      <img src="./clima.png" alt="Clima" width="250px" >
+      <div class="">
         <h1 class="display-4">Weather App</h1>
         <p class="lead">You can know the weather of any city in the world:</p>
       </div>
-    </div>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    </header>
+    <section id="root">
+      
+    </section>
+    <footer>
+      <span id="createdBy">
+        Copyright © 2024 | Coded with 🤍 by
+      </span>
+    </footer>
   </body>
 </html>
