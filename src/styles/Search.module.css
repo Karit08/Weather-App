@@ -1,11 +1,16 @@
+.containerInput{
+    margin-bottom: 1rem;
+}
+
 .input{
-    border: 1px solid #8e9aaf;
+    border: 1px solid #3a86ff;
     border-radius: .5rem;
     background: none;
     padding: 1rem;
+    margin-right: .3rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #003566;
+    color: #3a86ff;
     width: 400px;
     height: 38px;
 }
