@@ -9,20 +9,20 @@ export default function Card(props) { //export default function Card({onClose, n
   // {props.name === "Cairns" ? styles.card1 : styles.card } se puede hacer condicionales en estilos
 
   return (
-  <div className={styles.container}>
-    <div className={styles.containerImg}>
-      <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
-    </div>
-    <div className={styles.card}>
+  <div className={styles.containerCard}>
+    <div className={styles.containerButton}>
       <Button variant="outline-danger" className={styles.btn} onClick={props.onClose} >X</Button>{' '}
-      {/* <button >X</button> */}
-      <h4>{props.name} </h4>
-      <p>Mín</p>
-      <p>{props.min}</p> 
-      <p>Máx</p>
-      <p>{props.max}</p>
     </div>
-    
+    <h4 className={styles.containerName}>{props.name} </h4>
+    <div className={styles.containerInfo}>
+      <div className={styles.card}>
+        <p>Mín</p>
+        <p>{props.min}</p> 
+        <p>Máx</p>
+        <p>{props.max}</p>
+      </div>
+      <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
+    </div>   
   </div>
   )
 };

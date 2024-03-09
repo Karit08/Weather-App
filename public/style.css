@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 5% 25% 70%;
     align-items: center;
-    background-color: #ffc971;
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), #ffc971;
     padding: .6rem;
     color: whitesmoke;
 }

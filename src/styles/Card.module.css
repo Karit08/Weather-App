@@ -1,38 +1,42 @@
-.container{
+.containerCard{
     display: grid;
-    grid-template-columns: 30% 70%;
-    border: 1px solid #8e9aaf;
+    grid-template-rows: 25% 65%;
+    background: #b7b7a4;
+    opacity: .8;
     border-radius: 8px;
     width: 350px;
     height: 250px;
+    position: relative;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.containerButton{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 20% !important;
+}
+
+.containerName{
+    padding: 1rem;
 }
 
 .btn{
     width: 35px;
     height: 35px;
     border-radius: 8px;
-    margin: 2px;
-    align-self: flex-end;
+    margin: 3px;
+    align-content: center;
 }
 
-/* .btnColor{
-    color:white;
-} */
+.containerInfo{
+    display: grid;
+    grid-template-columns: 65% 30%;
+}
 
-/* .btn:hover{
-    color: red;
-    background-color: white;
-} */
-
-.containerImg{
+.card{
     display: flex;
-    align-items:center ;
+    flex-direction: column;
+    align-content: center;
 }
 
 .img{
