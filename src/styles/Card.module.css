@@ -1,25 +1,41 @@
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 1px solid #8e9aaf;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+}
+
 .card{
     display: flex;
     flex-direction: column;
-    width: 250px;
     align-content: center;
-    border: 2px solid gray;
-    border-radius: 10px;
 }
 
 .btn{
-    background-color: darkred;
-    width: 25px;
-    border-radius: 10px;
-    margin: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    margin: 2px;
     align-self: flex-end;
 }
 
-.btnColor{
+/* .btnColor{
     color:white;
-}
+} */
 
-.btn:hover{
+/* .btn:hover{
     color: red;
     background-color: white;
+} */
+
+.containerImg{
+    display: flex;
+    align-items:center ;
+}
+
+.img{
+    width: 110px;
+    height: 110px;
 }

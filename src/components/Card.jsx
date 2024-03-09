@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import styles from '../styles/Card.module.css'
 
 export default function Card(props) { //export default function Card({onClose, name, min, max, img}) {
@@ -8,14 +9,20 @@ export default function Card(props) { //export default function Card({onClose, n
   // {props.name === "Cairns" ? styles.card1 : styles.card } se puede hacer condicionales en estilos
 
   return (
-  <div className={styles.card}>
-    <button className={`${styles.btn} ${styles.btnColor}`} onClick={props.onClose}>X</button>
-    <h4>{props.name} </h4>
-    <p>Mín</p>
-    <p>{props.min}</p> 
-    <p>Máx</p>
-    <p>{props.max}</p>
-    <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found" />
+  <div className={styles.container}>
+    <div className={styles.containerImg}>
+      <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
+    </div>
+    <div className={styles.card}>
+      <Button variant="outline-danger" className={styles.btn} onClick={props.onClose} >X</Button>{' '}
+      {/* <button >X</button> */}
+      <h4>{props.name} </h4>
+      <p>Mín</p>
+      <p>{props.min}</p> 
+      <p>Máx</p>
+      <p>{props.max}</p>
+    </div>
+    
   </div>
   )
 };
