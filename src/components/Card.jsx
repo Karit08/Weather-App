@@ -17,9 +17,9 @@ export default function Card(props) { //export default function Card({onClose, n
     <div className={styles.containerInfo}>
       <div className={styles.card}>
         <p>Mín</p>
-        <p>{props.min}</p> 
+        <p>{props.min}°</p> 
         <p>Máx</p>
-        <p>{props.max}</p>
+        <p>{props.max}°</p>
       </div>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
     </div>   
