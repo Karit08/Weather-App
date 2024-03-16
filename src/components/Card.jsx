@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import styles from '../styles/Card.module.css'
+import { Link } from 'react-router-dom';
 
 export default function Card(props) { //export default function Card({onClose, name, min, max, img}) {
   // acá va tu código //Card Component
@@ -20,6 +21,7 @@ export default function Card(props) { //export default function Card({onClose, n
         <p>{props.min}°</p> 
         <p>Máx</p>
         <p>{props.max}°</p>
+        <Link to={`/city/${props.id}`}><p>About</p></Link>
       </div>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
     </div>   
