@@ -14,14 +14,15 @@ export default function Card(props) { //export default function Card({onClose, n
     <div className={styles.containerButton}>
       <Button variant="outline-danger" className={styles.btn} onClick={props.onClose} >X</Button>{' '}
     </div>
-    <h4 className={styles.containerName}>{props.name} </h4>
+    <Link to={`/city/${props.id}`}>
+      <h4 className={styles.containerName}>{props.name} </h4>
+    </Link>
     <div className={styles.containerInfo}>
       <div className={styles.card}>
         <p>Mín</p>
         <p>{props.min}°</p> 
         <p>Máx</p>
         <p>{props.max}°</p>
-        <Link to={`/city/${props.id}`}><p>About</p></Link>
       </div>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found"  className={styles.img}/>
     </div>   

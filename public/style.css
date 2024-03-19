@@ -1,24 +1,25 @@
 
 .conteiner{
-    display: grid;
-    grid-template-columns: 5% 25% 70%;
+    display: flex;
+    /* grid-template-columns: 5% 15% 80%; */
+    flex-direction: row;
+    padding: .3rem;
     align-items: center;
-    height: 100%;
-    background:  #ffc971;
-    padding: .6rem;
-    color: whitesmoke;
+    background:  #ffdab9;
+    color: #4a4e69;
 }
 
 #root{
     text-align: center;
     background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("back.jpg") no-repeat fixed;
-    background-size:unset;
+    background-size:cover;
 }
 
 #footer{
     font-size: 12px;
     width: 100%;
-    background: #ffc971;
+    background: #22223b;
     padding: .8rem;
     text-align: center;
+    color: azure;
 }

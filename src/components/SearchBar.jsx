@@ -5,6 +5,7 @@ import style from '../styles/Search.module.css'
 export default function SearchBar({onSearch}) {
   // acá va tu código
   const [city, setCity] = useState("");
+  console.log(onSearch)
 
   return (
     // <form onSubmit={(e) => {
@@ -21,7 +22,7 @@ export default function SearchBar({onSearch}) {
       className={style.containerInput}
       onSubmit={(e)=>{ //esto tiende a recargar la pagina
         e.preventDefault();
-        onSearch(city);
+        onSearch.onSearch(city);
         setCity("");
       }}
     >

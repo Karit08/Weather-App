@@ -1,7 +1,7 @@
 .containerCard{
     display: grid;
     grid-template-rows: 25% 65%;
-    background: #b7b7a4;
+    background: #beb2c8;
     opacity: .8;
     border-radius: 8px;
     width: 350px;

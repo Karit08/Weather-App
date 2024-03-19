@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Cards from './components/Cards.jsx';
 import City from './components/City.jsx';
-import SearchBar from './components/SearchBar.jsx';
+import NavBar from './components/NavBar.jsx';
 import About from './components/About.jsx';
 import { Routes, Route } from "react-router-dom";
 // import data from './data.js';
@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar onSearch={onSearch}/>
+      <NavBar onSearch={onSearch}/>
       <Routes>
         <Route path="/" element ={ <Cards cities={cities} onClose={onClose}/> }/>
         <Route path="/about" element={ <About/> }/>

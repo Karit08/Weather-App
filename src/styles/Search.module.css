@@ -3,22 +3,22 @@
 }
 
 .input{
-    border: 1px solid #3a86ff;
+    border: 1px solid #c9ada7;
     border-radius: .5rem;
     background: none;
     padding: 1rem;
     margin-right: .3rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #3a86ff;
+    color: #c9ada7;
     width: 400px;
     height: 38px;
 }
 
 .input:focus{
     outline: none;
-    border: 1px solid #bc6c25;
-    color: #bc6c25;
-    box-shadow: 1px 1px 1px 1px #bc6c25;
+    border: 1px solid #9a8c98;
+    color: #9a8c98;
+    box-shadow: 1px 1px 1px 1px #9a8c98;
 }
 
